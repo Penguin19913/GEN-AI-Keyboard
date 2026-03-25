@@ -35,7 +35,8 @@ function tokenAtCursor(text, cursor) {
   }
 }
 
-const API_BASE = 'http://localhost:5000/api/autocomplete'
+// const API_BASE = 'http://localhost:5000/api/autocomplete'
+const API_BASE = import.meta.env.VITE_BACKEND_URL
 
 async function fetchSuggestions(token, fullText) {
   if (!token) return []
