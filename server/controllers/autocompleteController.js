@@ -6,6 +6,9 @@ const openai = new OpenAI({
 
 export const getAutocompleteSuggestions = async (req, res) => {
   try {
+    if (!process.env.OPENAI_API_KEY) {
+      return res.status(500).json({ error: 'OpenAI API key not configured' })
+    }
     const { partial, fullText } = req.body
 
     const prompt = `You are an AI autocomplete assistant.
