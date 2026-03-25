@@ -8,10 +8,6 @@ const app = express()
 
 //Connect to databse
 
-// Middlewares
-app.use(cors({
-}))
-
 // Routes
 app.get('/', (req, res)=> res.send("API Working"))
 app.use('/api/autocomplete', express.json(), autocompleteRouter)
