@@ -14,7 +14,7 @@
   "dependencies": {
     "@clerk/express": "^1.7.16",
     "cloudinary": "^2.7.0",
-    "cors": "^2.8.5",
+    "cors": "^2.8.6",
     "dotenv": "^16.6.1",
     "express": "^5.1.0",
     "mongoose": "^8.17.0",

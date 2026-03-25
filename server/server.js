@@ -1,5 +1,4 @@
 import express from 'express'
-import cors from 'cors'
 import 'dotenv/config' 
 import autocompleteRouter from './routes/autocompleteRoute.js'
 
@@ -7,6 +6,7 @@ import autocompleteRouter from './routes/autocompleteRoute.js'
 const app = express()
 
 //Connect to databse
+
 
 // Routes
 app.get('/', (req, res)=> res.send("API Working"))
